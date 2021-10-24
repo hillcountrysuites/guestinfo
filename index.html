@@ -5,10 +5,10 @@
     <title>Hill Country Suites - Guest Info</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
@@ -19,14 +19,11 @@
     <a href="#home" class="w3-bar-item w3-button w3-wide">Hill Country Suites</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#arrival" class="w3-bar-item w3-button"><i class="fa fa-plane"></i> ARRIVAL</a>
+      <a href="#rules" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOUSE RULES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-phone"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
@@ -36,10 +33,8 @@
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-<!--  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>-->
-<!--  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>-->
-<!--  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
-<!--  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
+  <a href="#arrival" onclick="w3_close()" class="w3-bar-item w3-button">ARRIVAL</a>
+  <a href="#rules" onclick="w3_close()" class="w3-bar-item w3-button">HOUSE RULES</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -50,62 +45,208 @@
     </div>
 </header>
 
+<!-- Your arrival Section -->
+<div class="w3-container w3-light-green" style="padding:80px 16px" id="arrival">
+    <h3 class="w3-center">ARRIVAL</h3>
+    <br>
+    <p class="w3-center w3-large">
+        Thank you for choosing Hill Country Suites!
+        <br>
+        Following instructions will make your arrival easy and smooth:
+    </p>
+    <br>
+
+    <div id="carouselExampleIndicators" class="carousel slide text-center w3-white" data-interval="false">
+        <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="padding:3% 12%">
+                <img class="fa-fw" src="images/number-1.png" alt="number one">
+                <p></p>
+                <p>
+                    The best way to get here is by car.
+                    Uber or Lyft are good alternatives if you do not have a car during your stay.
+                    The address will be provided to you in a separate email.
+                </p>
+            </div>
+            <div class="carousel-item" style="padding:30px 40px">
+                <img class="fa-fw" src="images/number-2.png" alt="number two">
+                <p></p>
+                <p>
+                    Parking
+                </p>
+            </div>
+            <div class="carousel-item" style="padding:30px 40px">
+                <img class="fa-fw" src="images/number-3.png" alt="number three">
+                <p></p>
+                <p>
+                    Door
+                </p>
+            </div>
+            <div class="carousel-item" style="padding:30px 40px">
+                <img class="fa-fw" src="images/number-4.png" alt="number four">
+                <p></p>
+                <p>
+                    Read house rules
+                </p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</div>
+
+
+<!-- House Rules Section -->
+<div class="w3-container" style="padding:80px 16px" id="rules">
+    <h3 class="w3-center">HOUSE RULES</h3>
+    <br>
+    <p class="w3-center w3-large">Let's make the most out of this stay and be respectful with others.</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+
+        <!--In the house-->
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <div class="w3-container">
+                    <br>
+                    <h3>In the house</h3>
+                    <p class="w3-opacity">
+                    Please take your SHOES OFF at the bottom of the stairs especially during inclement
+                    weather. The upstairs is almost 100% carpet.
+                    </p>
+                    <p>
+                    No guests above the number provided in the booking are permitted on the property, in
+                    the unit or in pool area at any time. No more than a maximum of 8 guests can stay in the upper
+                    unit at any one time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Party policy-->
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <div class="w3-container">
+                    <br>
+                    <h3>Party policy</h3>
+                    <p class="w3-opacity">Parties are absolutely NOT ALLOWED</p>
+                    <p>
+                    This property is smack in the midst of a residential neighborhood. A party is defined as any activity which is likely to annoy the neighbors- rude behavior, loud music, yelling to name a few. This policy gives us the right, at our discretion to evict guests without refund in response to neighbor complaints.
+                    </p>
+                    <p>
+                    We call it the Be Cool Rule. If what you're doing doesn't harm the property or annoy the neighbors, it's cool. We are very serious about this rule. We cannot have disruptive guests in our property; it has a huge effect on the vacation rental industry in Austin and gives us all a very bad reputation. Please respect this property, and our neighbors.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Pool & Hot tub-->
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <br>
+                <div class="w3-container">
+                    <h3>Pool & hot tub</h3>
+                    <p class="w3-opacity">
+                    Please respect our neighbors, keep all music, noise & voice level to a low / minimum in the pool and balcony. Absolutely no yelling, boom boxes or loud music.
+                    </p>
+                    <ul>
+                        <li>
+                            Access to the pool is from the path to you left of the front door. The stairs and access from the garage area are off limit to the tenants.
+                        </li>
+                        <li>
+                            Hot tub should be requested/reserved at booking time. The hot tub is optional and should be requested in your booking. Please contact us if you have questions.
+                        </li>
+                        <li>
+                            Children must always be supervised.
+                        </li>
+                        <li>
+                            Wear shoes when stepping on the deck - it gets very hot.
+                        </li>
+                        <li>
+                            No running on pool deck.
+                        </li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
+                            NO DIVING! The pool is shallow.
+                        </li>
+                        <li>
+                            Pool hours are from 8am to 11pm strictly enforced in respect to our neighbors and their young babies and children.
+                        </li>
+                        <li>
+                            NO GLASS of any kind in the pool area (bottles, jugs, pitchers etc.).
+                        </li>
+                        <li>
+                            The number of guests in the dwelling as well as number of guests in the pool area are restricted to the number of guests registered in the booking.
+                        </li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
+                            The toilet facility is located under the deck for your use.
+                        </li>
+                        <li>
+                            Pool items are there for your use most are in the brown storage box, please return them when you are done using them.
+                        </li>
+                        <li>
+                            Do not leave any items floating in the pool when you are done. We would also ask that all the tenants please make sure you take back upstairs everything you bring to the pool area.
+                        </li>
+                    </ul>
+
+                    <p class="w3-opacity">Hope the weather is good, and you are able to enjoy the pool!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Car parking-->
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <div class="w3-container">
+                    <br>
+                    <h3>Car parking</h3>
+                    <p class="w3-opacity">
+                    Please do not block the two-car garage door on the right side.
+                    </p>
+                    <p>
+                    For parking, use the driveway, park in front of the one-car garage door along the black fence. The three available parking spots are illustrated in the picture below.
+                    </p>
+                    <p>
+                    Exceeding three cars is not permitted at any time. Parking in front of the neighbor's property
+                    may result in your car being towed.
+                    </p>
+                    <img src="/images/car_parking_arrangement.jpg" alt="Car parking arrangement" style="width:100%">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <!-- Contact Section -->
-<div class="w3-container w3-light-green" style="padding:128px 16px" id="contact">
+<div class="w3-container w3-light-green" style="padding:80px 16px" id="contact">
     <h3 class="w3-center">CONTACT</h3>
     <br>
-    <p class="w3-center w3-large">Please do not hesitate to contact us.</p>
+    <p class="w3-center w3-large">Please do not hesitate to contact <b>Iris</b>, if you have questions.</p>
     <br>
     <div style="margin-top:48px w3-center">
         <p class="w3-center"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i><a href="tel:+1 512-294-0045">+1 (512) 294-0045</a></p>
     </div>
 </div>
 
-<!-- House Rules Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">HOUSE RULES</h3>
-  <p class="w3-center w3-large">Let's make the most out of this stay and be respectful with others.</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l6 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <br>
-        <div class="w3-container">
-          <h3>Pool & Hot Tub</h3>
-          <p class="w3-opacity">Please do</p>
-            <ul>
-                <li>
-                    Rule 1
-                </li>
-                <li>
-                    Rule 2
-                </li>
-            </ul>
-          <p class="w3-opacity">Please do not</p>
-            <ul>
-                <li>
-                    Rule 1
-                </li>
-                <li>
-                    Rule 2
-                </li>
-            </ul>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l6 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <div class="w3-container">
-            <br>
-          <h3>Parties</h3>
-          <p class="w3-opacity">Please do not</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
+<!--Javascript-->
 <script>
 // Modal Image Gallery
 function onClick(element) {
@@ -132,6 +273,10 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>
+<!--Script for Bootstrap carousel-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -254,3 +254,8 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
