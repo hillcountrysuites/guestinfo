@@ -259,3 +259,7 @@ body, html {
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
+
+.no-bottom-margin {
+  margin: 0;
+}
